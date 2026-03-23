@@ -12,23 +12,31 @@
 
 body{background:#f1f5f9;color:#0f172a}
 
-/* 🔥 HEADER */
+/* 🔥 HEADER TEXT STYLE */
 header{
 position:fixed;
 width:100%;
 top:0;
-background:#fff;
-box-shadow:0 4px 20px rgba(0,0,0,0.08);
+background:#0f172a;
+color:#fff;
+box-shadow:0 4px 20px rgba(0,0,0,0.2);
 z-index:1000;
+text-align:center;
+padding:12px 0;
 }
 
+.company-name{
+font-size:20px;
+font-weight:700;
+letter-spacing:1px;
+}
 
 /* NAV */
 nav{
 display:flex;
 justify-content:space-around;
-padding:10px 0;
-background:#fff;
+background:#ffffff;
+padding:8px 0;
 }
 
 nav a{
@@ -46,9 +54,9 @@ font-size:20px;
 margin-bottom:2px;
 }
 
-/* SECTION FIX (important for header overlap) */
+/* SECTION */
 section{
-padding:160px 15px 80px;
+padding:140px 15px 80px;
 text-align:center;
 }
 
@@ -73,7 +81,7 @@ margin:15px 0;
 font-size:17px;
 }
 
-/* BUTTONS */
+/* BUTTON */
 .btn{
 padding:15px 30px;
 border:none;
@@ -95,9 +103,7 @@ margin-top:30px;
 }
 
 @media(min-width:600px){
-.cards{
-grid-template-columns:repeat(3,1fr);
-}
+.cards{grid-template-columns:repeat(3,1fr);}
 }
 
 .card{
@@ -110,9 +116,7 @@ cursor:pointer;
 transition:0.3s;
 }
 
-.card:hover{
-transform:translateY(-5px);
-}
+.card:hover{transform:translateY(-5px)}
 
 .card span{
 font-size:28px;
@@ -139,7 +143,7 @@ font-size:15px;
 
 /* CONTACT */
 .contact-logo img{
-width:130px;
+width:120px;
 border-radius:20px;
 margin-bottom:15px;
 box-shadow:0 10px 30px rgba(0,0,0,0.2);
@@ -171,10 +175,7 @@ font-size:20px;
 <body>
 
 <header>
-
-<div class="logo-banner">
-<img src="ambuja_logo.jpg">
-</div>
+<div class="company-name">Ambuja Software Solutions</div>
 
 <nav>
 <a href="#home"><span>🏠</span>Home</a>
@@ -182,7 +183,6 @@ font-size:20px;
 <a href="#features"><span>⭐</span>Features</a>
 <a href="#contact"><span>📞</span>Contact</a>
 </nav>
-
 </header>
 
 <section class="hero" id="home">
